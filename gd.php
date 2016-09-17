@@ -14,7 +14,7 @@ for($i=0;$i<4;$i++){
     $font = rand(30,50);
     $x = rand(10,15)+$i*25;
     $y = rand(10,20);
-    $c = $characters[rand(0,count($characters))];
+    $c = $characters[rand(0,count($characters)-1)];
     // echo $font,$x,$y,$c;
     imagestring($img,$font,$x,$y,$c,$black);
 }
